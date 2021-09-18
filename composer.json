@@ -1,0 +1,20 @@
+{
+    "name": "phyrus/pdf",
+    "version": "0.0.4",
+    "description": "Phyrus PDF module",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Phyrus",
+            "email": "framework@phyrus.org"
+        }
+    ],
+    "autoload": {
+        "files": ["/index.php"]
+    },
+    "require": {
+        "phyrus/framework": "^0.0.4",
+        "dompdf/dompdf": "^1.0"
+    }
+}
