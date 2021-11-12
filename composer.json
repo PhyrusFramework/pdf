@@ -1,6 +1,6 @@
 {
     "name": "phyrus/pdf",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "description": "Phyrus PDF module",
     "type": "library",
     "license": "MIT",
@@ -14,7 +14,7 @@
         "files": ["/index.php"]
     },
     "require": {
-        "phyrus/framework": "^0.0.4",
+        "phyrus/framework": "~0.0.6",
         "dompdf/dompdf": "^1.0"
     }
 }
