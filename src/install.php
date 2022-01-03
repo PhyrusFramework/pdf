@@ -2,17 +2,11 @@
 
 if (Config::get('development_mode')) {
 
-    if (Config::get('templates') == null) {
+    if (Config::get('pdf') == null) {
 
-        Config::save('templates', [
-            'pdf' => '/pdf'
+        Config::save('pdf', [
+            'templates' => '/pdf'
         ]);
-
-    } else {
-
-        $t = Config::get('templates');
-        $t['pdf'] = '/pdf';
-        Config::save('templates', $t);
 
     }
 

@@ -23,9 +23,9 @@ class PDF {
      * @return string
      */
     private static function templatesDir() : string {
-        $check = Config::get('templates.pdf');
+        $check = Config::get('pdf.templates');
         if (empty($check)) {
-            Config::save('templates.pdf', '/pdf');
+            Config::save('pdf.templates', '/pdf');
             Folder::instance(Path::project() . '/pdf')->create();
             return '/pdf';
         }
