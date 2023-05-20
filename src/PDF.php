@@ -26,7 +26,7 @@ class PDF {
         $check = Config::get('pdf.templates');
         if (empty($check)) {
             Config::save('pdf.templates', '/pdf');
-            Folder::instance(Path::project() . '/pdf')->create();
+            Folder::instance(Path::root() . '/pdf')->create();
             return '/pdf';
         }
         return $check;
@@ -134,7 +134,7 @@ class PDF {
      * @param array $variables [Default empty]
      */
     function loadTemplate(string $template, array $variables = []) {
-        $path = Path::project() . self::templatesDir();
+        $path = Path::root() . self::templatesDir();
         $file = $path . "/$template";
         if (!file_exists($file)) return;
 
